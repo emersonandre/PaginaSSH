@@ -1,0 +1,95 @@
+<!DOCTYPE HTML>
+<html lang = "pt-br">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+	<link rel="stylesheet" href="_css/estilo.css" />
+	<link rel="shortcut icon" href="_imagens/favicon.ico">
+	<link rel="icon" href="_imagens/animated_favicon1.gif" type="image/gif" >
+	
+	<link href="_css/login.css" rel="stylesheet">
+	<!--[if lt IE 9]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	<title>SSH INFORMÁTICA</title>
+</head>
+<script language="javascript" src="_javascript/funcoes.js">	
+</script>
+<body>
+<div id="interface">	
+	<header id="cabecalho">
+			<hgroup>
+				<h1>SSH Informática</h1>
+				<h2>Honestidade e qualidade em nossos serviços.</h2>
+			</hgroup>
+		<img id="icone" src="_imagens/suporte.png"/>
+		<nav id="menu">
+			<h1>Menu Principal</h1>
+				<ul type="disc">
+					<li onmouseover="mudaFoto('_imagens/cubo.png')" onmouseout="mudaFoto('_imagens/suporte.png')"><a href="index.html">Home</a></li>
+					<li onmouseover="mudaFoto('_imagens/empresa.png')" onmouseout="mudaFoto('_imagens/suporte.png')"><a href="empresa.html">Empresa</a></li>
+					<li onmouseover="mudaFoto('_imagens/servicos.png')" onmouseout="mudaFoto('_imagens/suporte.png')"><a href="servicos.html">Serviços</a></li>
+					<li onmouseover="mudaFoto('_imagens/suporte.png')" onmouseout="mudaFoto('_imagens/suporte.png')"><a href="suporte.html">Suporte</a></li>
+					<li onmouseover="mudaFoto('_imagens/contato.png')" onmouseout="mudaFoto('_imagens/suporte.png')"><a href="fale-conosco.html">Fale conosco</a></li>
+				</ul>
+		</nav>
+	</header>
+	<section id="corpo-full">
+		<article id="noticia-principal">
+			<header id="cabecalho-artigo">
+				<hgroup>
+					<h3>SSH > Suporte</h3>				
+				</hgroup>
+			</header>
+
+			<!--login modal-->
+			<div id="loginModal"  tabindex="1"  >			  
+			      <div class="modal-header">
+			          <h1 class="text-center"><img src="_imagens/senha.png"/> Acesso restrito</h1>
+
+			      </div>
+
+			      <div class="modal-body">
+			          <form action="valida.php" method="post">
+			            <div id="div-campo-usuario">
+			              <input type="text" id="usuario" name="usuario" placeholder="Usuário">
+			            </div>
+			            
+			            <div id="div-campo-senha">
+			              <input type="password" id="senha" name="senha" placeholder="Senha">
+			            </div>
+			           <p>
+							<input type="checkbox" name="remember" id="remember">
+							<label for="remember">lembrar meu usuario!</label>
+						</p>
+			            <div id="div-botao">
+			              <li><input type="submit" value="Logar" />
+			              <input type="reset" value="Limpar" class="alt" /></li>
+			            </div>
+
+			          </form>
+			      </div>			  
+			</div>
+				
+</section>
+	
+   <footer id="rodape">
+        <p>Copyright 2016 - by Marcio Rogerio Rodrigues |
+        <a href="https://www.facebook.com" ><img id="face" src="_imagens/facebook.png"/></a>   <a href="https://www.facebook.com"> Facebook </a>|
+        <a href="https://www.twitter.com" ><img id="twitter" src="_imagens/twitter.png"/></a> <a href="http://www.twitter.com"> Twitter </a></p>
+    </footer>
+</div>
+<script
+  type="text/javascript"
+  src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js">
+</script>
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.scrollex.min.js"></script>
+<script src="js/jquery.scrolly.min.js"></script>
+<script src="js/skel.min.js"></script>
+<script src="js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+<script src="js/main.js"></script>
+</body>
+
+</html>

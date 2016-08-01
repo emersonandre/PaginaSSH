@@ -1,0 +1,108 @@
+<!DOCTYPE HTML>
+<html lang = "pt-br">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" href="_css/estilo.css" />
+    <link rel="stylesheet" href="_css/form.css" />
+    <link rel="shortcut icon" href="_imagens/favicon.ico">
+    <link rel="icon" href="_imagens/animated_favicon1.gif" type="image/gif" >
+    <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+   <title>SSH INFORMÁTICA</title>
+</head>
+<script language="javascript" src="_javascript/funcoes.js">
+    
+</script>
+<body>
+<div id="interface">
+    
+    <header id="cabecalho">
+            <hgroup>
+                <h1>SSH Informática</h1>
+                <h2>Honestidade e qualidade em nossos serviços.</h2>
+            </hgroup>
+
+      <img id="icone" src="_imagens/contato.png"/>
+        <nav id="menu">
+            <h1>Menu Principal</h1>
+                <ul type="disc">
+                    <li onmouseover="mudaFoto('_imagens/cubo.png')" onmouseout="mudaFoto('_imagens/contato.png')"><a href="index.html">Home</a></li>
+                    <li onmouseover="mudaFoto('_imagens/empresa.png')" onmouseout="mudaFoto('_imagens/contato.png')"><a href="empresa.html">Empresa</a></li>
+                    <li onmouseover="mudaFoto('_imagens/servicos.png')" onmouseout="mudaFoto('_imagens/contato.png')"><a href="servicos.html">Serviços</a></li>
+                    <li onmouseover="mudaFoto('_imagens/suporte.png')" onmouseout="mudaFoto('_imagens/contato.png')"><a href="suporte.html">Suporte</a></li>
+                    <li onmouseover="mudaFoto('_imagens/contato.png')" onmouseout="mudaFoto('_imagens/contato.png')"><a href="fale-conosco.html">Fale conosco</a></li>
+                </ul>
+        </nav>
+    </header>
+    <section id="corpo-full">
+
+        <article id="noticia-principal">
+            <header id="cabecalho-artigo">
+                <hgroup>
+                    <h3>SSH > Contato</h3>                 
+                </hgroup>
+            </header>
+<form method="post" id="fContato" action="mailto:contato@sshinfo.com.br">
+    <fieldset id="usuario"><legend>Identificação do Usuário</legend>
+        <p><label for="cNome">Nome:</label><input type="text" nome="tNome" id="cNome" size="20" maxlength="50" placeholder="Nome completo"/></p>
+        <p><label for="cSenha">Senha:</label><input type="password" nome="tsenha" id="cSenha" size="10" maxlength="8" placeholder="Senha 8 digitos"/></p>
+        <p><label for="cEmail">E-mail:</label><input type="email" nome="tEmail" id="cEmail" size="30" maxlength="50" placeholder="Ex: usuario@dominio.com.br"/></p>
+        <fieldset id="sexo"><legend>Sexo</legend>
+            <input type="radio" name="tSexo" id="cMasc"/><label for="cMasc">Masculino</label><br/>
+            <input type="radio" name="tSexo" id="cFem"/><label for="cFem">Feminino</label></fieldset>
+        <p><label for="cEmail">Data de Nascimento:</label><input type="date" nome="tData" id="cData"</p>
+    </fieldset>
+    
+    <fieldset id="endereco"><legend>Endereço do Usuário</legend>
+        <p><label for="cLogradouro">Logradouro:</label><input type="text" nome="tLogradouro" id="cLogradouro" size="30" maxlength="50" placeholder="Rua, AV, Trav, ...."/></p>
+        <p><label for="cNumero">Número:</label><input type="number" nome="tNumero" id="cNumero" min="0" max="99999"/></p>
+        <p><label for="cEstado">Estado:</label>
+            <select name="tEstado" id="cEstado">
+            <option>Acre (AC)</option>
+            <option>Alagoas (AL)</option>
+            <option>Amapá (AP)</option>
+            <option>Amazonas (AM)</option>
+            <option>Bahia (BA)</option>
+            <option>Ceará (CE)</option>
+            <option>Distrito Federal (DF)</option>
+            <option>Espírito Santo (ES)</option>
+            <option>Goiás (GO)</option>
+            <option>Maranhão (MA)</option>
+            <option>Mato Grosso (MT)</option>
+            <option>Mato Grosso do Sul (MS)</option>
+            <option>Minas Gerais (MG)</option>
+            <option>Pará (PA)</option>
+            <option>Paraíba (PB)</option>
+            <option>Paraná (PR)</option>
+            <option>Pernambuco (PE)</option>
+            <option>Piauí (PI)</option>
+            <option>Rio de Janeiro (RJ)</option>
+            <option>Rio Grande do Norte (RN)</option>
+            <option>Rio Grande do Sul (RS)</option>
+            <option>Rondônia (RO)</option>
+            <option>Roraima (RR)</option>
+            <option selected>Santa Catarina (SC)</option>
+            <option>São Paulo (SP)</option>
+            <option>Sergipe (SE)</option>
+            <option>Tocantins (TO)</option>
+        </select></p>
+       <p><label for="cCidade">Cidade:</label><input type="text" nome="tCidade" id="ccidade" size="20" maxlength="50" placeholder="Sua cidade"/></p>
+    </fieldset>    
+    <fieldset id="mensagem"><legend>Mensagem do Usuário</legend>
+         <p><label for="CUrg">Grau de Urgência:</label>
+         Mín <input type="range" name="tUrg" id="CUrg" min="0" max="10"/>Máx</p>
+        <p><label for="CMsg">Mensagem:</label>
+        <textarea nome="tMsg" id="cMsg" cols="45" rows="5" placeholder="Escreva a sua mensagem"></textarea></p>
+    </fieldset>
+    <input id="bEnviar" type="image" name="tEnviar" src="_imagens/botao-enviar.png">
+</form>
+   <footer id="rodape">
+        <p>Copyright 2016 - by Marcio Rogerio Rodrigues |
+        <a href="https://www.facebook.com" ><img id="face" src="_imagens/facebook.png"/></a>   <a href="https://www.facebook.com"> Facebook </a>|
+        <a href="https://www.twitter.com" ><img id="twitter" src="_imagens/twitter.png"/></a> <a href="http://www.twitter.com"> Twitter </a></p>
+    </footer>
+</div>
+</body>
+
+</html>

@@ -1,0 +1,282 @@
+@Charset "UTF-8";
+/*inserindo fontes extras*/
+@import url(https://fonts.googleapis.com/css?family=Titillium+Web:200);
+
+@font-face{
+	font-family: 'FonteLogo';
+	src: url("../_fonts/bubblegum-sans-regular.otf");
+}
+
+/*Formatação do site*/
+.modal-footer {   
+	border-top: 0px; 
+}
+
+body{
+	font-family: arial, sans-serif;
+	background-color: #dddddd;
+	color: rgba(0,0,0,1);
+}
+
+p{
+	text-align: justify;
+	text-indent: 50px;
+}
+
+a{
+	color:606060;
+	text-decoration: none;
+}
+
+header#cabecalho img#icone{
+	position: absolute;
+	width: 150px;
+	height: 150px;
+	left: 80%;
+	top:10%;
+}
+
+header#cabecalho {
+	border-bottom: 1px #c0c0c0 solid;
+	height: 220px;
+	background: url(../_imagens/ssh.png) no-repeat 0px 100px;
+	
+}
+
+
+header#cabecalho h1{
+	font-family: Berlin Sans FB;
+	font-size: 40pt;
+	color:#000000;
+	/*text-shadow: 1px 1px 1px rgba(0,0,0,.6);*/
+	padding: 0px;
+	margin-bottom: 0px;
+	font-weight: 600;
+}
+
+header#cabecalho h2{
+	font-family: 'Titillium Web', sans-serif;
+	font-size: 15pt;
+	color:#666666;
+	padding: 0px;
+	margin-top: 0px;
+	letter-spacing: 1px;
+}
+
+
+div#interface{
+	width: 90%;
+	background-color: white;
+	margin: /*CIMA*/-20px auto 0px auto;
+	box-shadow: 0px 0px 10px  rgba(0,0,0,.5);
+	padding: 10px 10px 10px 10px;
+}
+
+/*Formatação de imagens*/
+figure.foto_legenda{
+	position: relative;
+	border: 8px solid white;
+	box-shadow: 1px 1px 4px black;
+}
+
+figure.foto_legenda img{
+
+	width: 100%;
+	height: 100%;
+}
+
+figure.foto_legenda figcaption{
+	opacity: 0;
+	position:absolute;
+	top:0px;
+	background-color: rgba(0,0,0,.4);
+	color: white;
+	width: 100%;
+	height: 100%;
+	padding: 10px;
+	box-sizing: border-box;
+	transition: opacity 1s;
+}
+
+figure.foto_legenda:hover figcaption{
+	opacity: 1;
+}
+
+/*Formatação menu*/
+
+nav#menu {
+	display: block;
+}
+
+nav#menu ul{
+	list-style: none;
+	text-transform: uppercase;
+	position: absolute;
+	top: -20px;
+	left: 40%;
+}
+
+nav#menu li{
+	display: inline-block;
+	background-color: #dddddd;
+	padding: 10px;
+	margin: 2px;
+	transition: background-color 1s ;
+}
+
+nav#menu li:hover{
+	background-color: #FF4500;
+}
+
+nav#menu h1{
+	display: none;
+}
+
+nav#menu a{
+
+	color: #000000;
+	text-decoration: none;
+}
+
+nav#menu a:hover{
+	color: #ffffff;
+	text-decoration: none;
+}
+
+/*Formatação parte esquerda do site */
+section#corpo {
+	display: block;
+	width: 520px; 
+	float: left;
+	border-right: 1px solid #C0C0C0;
+}
+
+article#noticia-principal p {
+	font-size: 12pt;
+	margin: 10px 10px 10px 0px;
+}
+
+article#noticia-principal h2 {
+	color:#888888;
+	font-size: 13pt;
+	background-color: #dddddd;
+	padding: 5px 0px 5px 10px;
+	margin: 10px 5px 0px 0px;
+}
+header#cabecalho-artigo h1{
+	font-family: 'FonteLogo'
+	font-size: 20pt;
+	color: #606060;
+	margin-bottom: 0px;
+}
+header#cabecalho-artigo h2{
+	font-size: 13pt;
+	color: #cecece;
+	background-color: #ffffff;
+	margin: 0px;
+}
+header#cabecalho-artigo h3{
+	font-size: 12px
+	color:#606060;
+	margin-top: 0px;
+	padding: 5px;
+}
+	/* visited link */
+	a:visited {
+    color: black;
+
+}
+.direita{
+	text-align: right;
+	font-size: 12px;
+
+}
+
+/*colula a direita do site*/
+aside#lateral{
+	display: block;
+	margin-top: 10px;
+	width: 448px;
+	background-color: #dddddd;
+	padding: 10px;
+	float: right;
+	box-shadow: 2px 2px 2px rgba(0,0,0,.5);
+
+}
+
+aside#lateral h1{
+	font-family: 'FonteLogo', sans-serif;
+	font-size: 20pt;
+	color: #606060;
+	margin-top: 0px;
+}
+
+aside#lateral h2{
+	background-color: #606060;
+	font-size: 13pt;
+	color: #ffffff;
+	padding: 5px;	
+}
+
+
+
+/*tabela*/
+table#tabelaspec {
+	border: 1px solid #c0c0c0;
+	border-spacing: 0px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+table#tabelaspec td{
+	border: 1px solid #c0c0c0;
+	padding: 10px;
+	text-align: center;
+	vertical-align: middle;
+}
+
+table#tabelaspec td.ce{
+	color: #ffffff;
+	background-color: #606060;
+	vertical-align: top;
+	font-weight: bold;
+
+}
+
+table#tabelaspec td.cd{
+	background-color: #cfcfcf;	
+}
+
+table#tabelaspec caption{
+	color:#888888;
+	font-size: 13pt;
+	font-weight: bolder;
+}
+
+table#tabelaspec caption span{
+
+	display: block;
+	float: right;
+	color: #000000;
+	font-size: 8pt;
+	margin-top: 10px;
+}
+
+
+/*Rodapé*/
+footer#rodape{
+	clear:both;
+	border-top: 1px solid #c0c0c0;
+	margin-top: 10px;
+}
+
+footer#rodape p{
+	text-align: center;
+	font-family: tahoma, sans-serif;
+	font-size: 8pt;
+}
+footer#rodape img#face, img#twitter{
+	width: 30px;
+	height: 30px;
+	
+}

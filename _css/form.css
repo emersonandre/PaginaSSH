@@ -1,0 +1,68 @@
+@charset "UTF-8";
+
+form{
+    width:550px;
+    margin: auto;    
+}
+input,textarea{
+    font-family: sans-serif;
+    font-weight: normal;
+    font-size: 14px;
+    background-color: rgba(255,255,255,.8);
+}
+input:hover, textarea:hover{
+    background-color: #dddddd;
+}
+
+
+/*oculta o formulario de id do usuario em Nova OS*/
+input#cId_cli{
+display: none;
+
+}
+
+
+legend{
+    color: #888888;
+    font-weight: bold;
+    font-size: 13pt;
+    font-family:sans-serif;
+}
+fieldset{
+    border-color: #cecece;
+    margin: 20px;
+}
+fieldset#comandos{
+    background: url("../_imagens/icone-contato.png") no-repeat 95% 95%;
+    background-size: 100px 100px;
+}
+
+fieldset#sexo{
+    width:150px;
+}
+fieldset#Whats{
+    width:150px;
+}
+fieldset#usuario{
+    background: url("../_imagens/icone-contato.png") no-repeat 95% 95%;
+    background-size: 100px 100px;
+}
+fieldset#cliente{
+    background: url("../_imagens/icone-contato.png") no-repeat 95% 95%;
+   background-size: 100px 100px; 
+}
+fieldset#endereco{
+    background: url("../_imagens/icone-endereco.png") no-repeat 95% 95%;
+    background-size: 100px 100px;
+}
+fieldset#mensagem{
+    background: url("../_imagens/icone-mensagem.png") no-repeat 95% 95%;
+    background-size: 100px 100px;
+}
+input#bEnviar{
+    margin: 0 auto;
+    margin-left: 35%;
+}
+textarea{
+    margin-left: 15%;
+}
